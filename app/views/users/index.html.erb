@@ -1,0 +1,32 @@
+<h1>ユーザー一覧</h1>
+<div class="container">
+  <form class="form-inline">
+    <div class="form-group">
+
+<div class="profile_list">
+  <div class="container">
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <theader>
+          <tr>
+            <th><%='ID' %></th>
+            <th><%='名前' %></th>
+            <th><%='ユーザーID' %></th>
+            <th><%='メールアドレス'%></th>
+          </tr>
+        </theader>
+        <tbody>
+          <% @users.each do |user| %>
+            <tr>
+              <td><%= user.id %></td>
+              <td> <a href="/users/<%=user.id%>"><%= user.name %></a>
+              </td>
+              <td><%= user.userid %></td>
+              <td><%= user.email %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

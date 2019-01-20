@@ -1,0 +1,18 @@
+development:
+　  cloud_name: ht123aaabb112
+     api_key: ‘266328193169852’
+     api_secret: hoge123hoge123
+     enhance_image_tag: true
+     static_image_support: false
+  production:
+     cloud_name: ht123aaa123
+     api_key: ‘1222334455’
+     api_secret: hoge1234hoge124
+     enhance_image_tag: true
+     static_image_support: true
+  test:
+     cloud_name: ht12ab12ab
+     api_key: ‘hoehogehgoe123’
+     api_secret: hoehogehgoe123
+     enhance_image_tag: true
+     static_image_support: false
